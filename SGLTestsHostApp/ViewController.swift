@@ -17,14 +17,20 @@
 //
 // http://opensource.org/licenses/MIT
 
-#import <UIKit/UIKit.h>
+import UIKit
+import GLKit
+import OpenGLES
 
-//! Project version number for SGL.
-FOUNDATION_EXPORT double SGLVersionNumber;
-
-//! Project version string for SGL.
-FOUNDATION_EXPORT const unsigned char SGLVersionString[];
-
-// In this header, you should import all the public headers of your framework using statements like #import <SGL/PublicHeader.h>
-
-
+public class ViewController: GLKViewController  {
+    
+    public override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        guard let glView = self.view as? GLKView else {
+            return;
+        }
+        glView.context = EAGLContext(api: EAGLRenderingAPI.openGLES3)
+        EAGLContext.setCurrent(glView.context)
+    }
+    
+}

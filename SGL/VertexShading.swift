@@ -17,14 +17,24 @@
 //
 // http://opensource.org/licenses/MIT
 
-#import <UIKit/UIKit.h>
+//
 
-//! Project version number for SGL.
-FOUNDATION_EXPORT double SGLVersionNumber;
+// A protocol describing something that can provide a compiled vertex shader (with an identifier)
+// using a subclass of Variables.  The other functions are optional (due to the default 
+// implementations in the extension) and provide opportunities for custom behavior at various points
+// in the life cycle.
 
-//! Project version string for SGL.
-FOUNDATION_EXPORT const unsigned char SGLVersionString[];
+public protocol VertexShading {
+    associatedtype Vars: Variables
+    var variables: Vars { get }
+    var id: GLuint { get }
+    func postLink(shaderProgram: GLuint) -> Bool
+    func preDraw()
+    func postDraw()
+}
 
-// In this header, you should import all the public headers of your framework using statements like #import <SGL/PublicHeader.h>
-
-
+extension VertexShading {
+    public func postLink(shaderProgram: GLuint) -> Bool { return true }
+    public func preDraw() {}
+    public func postDraw() {}
+}

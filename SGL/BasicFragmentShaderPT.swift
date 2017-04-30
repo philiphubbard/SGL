@@ -17,14 +17,32 @@
 //
 // http://opensource.org/licenses/MIT
 
-#import <UIKit/UIKit.h>
+import OpenGLES
 
-//! Project version number for SGL.
-FOUNDATION_EXPORT double SGLVersionNumber;
+// A simple fragment shader that outputs color based only on an input texture, to be used with a
+// vertex shader that produces positions ("P") and texture coordinates ("T").
 
-//! Project version string for SGL.
-FOUNDATION_EXPORT const unsigned char SGLVersionString[];
-
-// In this header, you should import all the public headers of your framework using statements like #import <SGL/PublicHeader.h>
-
-
+public class BasicFragmentShaderPT: FragmentShading {
+    public var id: GLuint {
+        get {
+            return shadingCore.id
+        }
+    }
+    
+    public init?() {
+        guard let core = ShadingCore(shaderType: GLenum(GL_FRAGMENT_SHADER), shaderStr: fragmentShaderStr) else {
+            return nil
+        }
+        shadingCore = core
+    }
+    
+    private let shadingCore: ShadingCore
+    private let fragmentShaderStr = "#version 300 es\n" +
+        "uniform sampler2D tex;\n" +
+        "in highp vec2 vs_texCoord;\n" +
+        "out highp vec4 fs_color;\n" +
+        "void main()\n" +
+        "{\n" +
+        "    fs_color = texture(tex, vs_texCoord);\n" +
+        "}\n";
+}

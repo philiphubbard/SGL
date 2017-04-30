@@ -7,9 +7,42 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D324605C1EB64F4100D0FA7A /* SGL.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = D3D709581EB64DE4009C76B4 /* SGL.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D324605E1EB64F7200D0FA7A /* green.png in Resources */ = {isa = PBXBuildFile; fileRef = D324605D1EB64F7200D0FA7A /* green.png */; };
 		D3D709621EB64DE5009C76B4 /* SGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3D709581EB64DE4009C76B4 /* SGL.framework */; };
-		D3D709671EB64DE5009C76B4 /* SGLTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D709661EB64DE5009C76B4 /* SGLTests.swift */; };
 		D3D709691EB64DE5009C76B4 /* SGL.h in Headers */ = {isa = PBXBuildFile; fileRef = D3D7095B1EB64DE4009C76B4 /* SGL.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D3D709851EB64E75009C76B4 /* Attribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D709721EB64E75009C76B4 /* Attribute.swift */; };
+		D3D709861EB64E75009C76B4 /* BasicFragmentShaderPT.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D709731EB64E75009C76B4 /* BasicFragmentShaderPT.swift */; };
+		D3D709871EB64E75009C76B4 /* BasicVertexShaderPNT.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D709741EB64E75009C76B4 /* BasicVertexShaderPNT.swift */; };
+		D3D709881EB64E75009C76B4 /* BasicVertexShaderPT.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D709751EB64E75009C76B4 /* BasicVertexShaderPT.swift */; };
+		D3D709891EB64E75009C76B4 /* Drawable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D709761EB64E75009C76B4 /* Drawable.swift */; };
+		D3D7098A1EB64E75009C76B4 /* DrawableCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D709771EB64E75009C76B4 /* DrawableCore.swift */; };
+		D3D7098B1EB64E75009C76B4 /* FlatSquarePT.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D709781EB64E75009C76B4 /* FlatSquarePT.swift */; };
+		D3D7098C1EB64E75009C76B4 /* FlattishSquarePNT.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D709791EB64E75009C76B4 /* FlattishSquarePNT.swift */; };
+		D3D7098D1EB64E75009C76B4 /* FragmentShading.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D7097A1EB64E75009C76B4 /* FragmentShading.swift */; };
+		D3D7098E1EB64E75009C76B4 /* PhongOneDirectionalFragmentShaderPNT.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D7097B1EB64E75009C76B4 /* PhongOneDirectionalFragmentShaderPNT.swift */; };
+		D3D7098F1EB64E75009C76B4 /* ShaderProgram.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D7097C1EB64E75009C76B4 /* ShaderProgram.swift */; };
+		D3D709901EB64E75009C76B4 /* ShadingCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D7097D1EB64E75009C76B4 /* ShadingCore.swift */; };
+		D3D709911EB64E75009C76B4 /* SphericalHarmonicsFragmentShaderPNT.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D7097E1EB64E75009C76B4 /* SphericalHarmonicsFragmentShaderPNT.swift */; };
+		D3D709921EB64E75009C76B4 /* Texture.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D7097F1EB64E75009C76B4 /* Texture.swift */; };
+		D3D709931EB64E75009C76B4 /* Uniform.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D709801EB64E75009C76B4 /* Uniform.swift */; };
+		D3D709941EB64E75009C76B4 /* Variables.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D709811EB64E75009C76B4 /* Variables.swift */; };
+		D3D709951EB64E75009C76B4 /* VariablesPNT.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D709821EB64E75009C76B4 /* VariablesPNT.swift */; };
+		D3D709961EB64E75009C76B4 /* VariablesPT.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D709831EB64E75009C76B4 /* VariablesPT.swift */; };
+		D3D709971EB64E75009C76B4 /* VertexShading.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D709841EB64E75009C76B4 /* VertexShading.swift */; };
+		D3D7099F1EB64E80009C76B4 /* DisplayLinkTestRunner.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D709981EB64E80009C76B4 /* DisplayLinkTestRunner.swift */; };
+		D3D709A01EB64E80009C76B4 /* TestPNT.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D709991EB64E80009C76B4 /* TestPNT.swift */; };
+		D3D709A11EB64E80009C76B4 /* TestPT.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D7099A1EB64E80009C76B4 /* TestPT.swift */; };
+		D3D709A21EB64E80009C76B4 /* TestShaderProgram.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D7099B1EB64E80009C76B4 /* TestShaderProgram.swift */; };
+		D3D709A31EB64E80009C76B4 /* TestShadingCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D7099C1EB64E80009C76B4 /* TestShadingCore.swift */; };
+		D3D709A41EB64E80009C76B4 /* TestTexture.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D7099D1EB64E80009C76B4 /* TestTexture.swift */; };
+		D3D709A51EB64E80009C76B4 /* TestVariables.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D7099E1EB64E80009C76B4 /* TestVariables.swift */; };
+		D3D709AD1EB64ED9009C76B4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D709AC1EB64ED9009C76B4 /* AppDelegate.swift */; };
+		D3D709AF1EB64ED9009C76B4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D709AE1EB64ED9009C76B4 /* ViewController.swift */; };
+		D3D709B21EB64ED9009C76B4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3D709B01EB64ED9009C76B4 /* Main.storyboard */; };
+		D3D709B41EB64ED9009C76B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3D709B31EB64ED9009C76B4 /* Assets.xcassets */; };
+		D3D709C11EB64EEF009C76B4 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3D709BF1EB64EEF009C76B4 /* GLKit.framework */; };
+		D3D709C21EB64EEF009C76B4 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3D709C01EB64EEF009C76B4 /* OpenGLES.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -20,15 +53,69 @@
 			remoteGlobalIDString = D3D709571EB64DE4009C76B4;
 			remoteInfo = SGL;
 		};
+		D3D709BC1EB64EDF009C76B4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D3D7094F1EB64DE4009C76B4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D3D709A91EB64ED9009C76B4;
+			remoteInfo = SGLTestsHostApp;
+		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		D324605B1EB64F3400D0FA7A /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				D324605C1EB64F4100D0FA7A /* SGL.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		D324605D1EB64F7200D0FA7A /* green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = green.png; sourceTree = "<group>"; };
 		D3D709581EB64DE4009C76B4 /* SGL.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SGL.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3D7095B1EB64DE4009C76B4 /* SGL.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SGL.h; sourceTree = "<group>"; };
 		D3D7095C1EB64DE4009C76B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D3D709611EB64DE5009C76B4 /* SGLTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SGLTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		D3D709661EB64DE5009C76B4 /* SGLTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SGLTests.swift; sourceTree = "<group>"; };
 		D3D709681EB64DE5009C76B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D3D709721EB64E75009C76B4 /* Attribute.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Attribute.swift; sourceTree = "<group>"; };
+		D3D709731EB64E75009C76B4 /* BasicFragmentShaderPT.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicFragmentShaderPT.swift; sourceTree = "<group>"; };
+		D3D709741EB64E75009C76B4 /* BasicVertexShaderPNT.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicVertexShaderPNT.swift; sourceTree = "<group>"; };
+		D3D709751EB64E75009C76B4 /* BasicVertexShaderPT.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicVertexShaderPT.swift; sourceTree = "<group>"; };
+		D3D709761EB64E75009C76B4 /* Drawable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Drawable.swift; sourceTree = "<group>"; };
+		D3D709771EB64E75009C76B4 /* DrawableCore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawableCore.swift; sourceTree = "<group>"; };
+		D3D709781EB64E75009C76B4 /* FlatSquarePT.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlatSquarePT.swift; sourceTree = "<group>"; };
+		D3D709791EB64E75009C76B4 /* FlattishSquarePNT.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlattishSquarePNT.swift; sourceTree = "<group>"; };
+		D3D7097A1EB64E75009C76B4 /* FragmentShading.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FragmentShading.swift; sourceTree = "<group>"; };
+		D3D7097B1EB64E75009C76B4 /* PhongOneDirectionalFragmentShaderPNT.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhongOneDirectionalFragmentShaderPNT.swift; sourceTree = "<group>"; };
+		D3D7097C1EB64E75009C76B4 /* ShaderProgram.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShaderProgram.swift; sourceTree = "<group>"; };
+		D3D7097D1EB64E75009C76B4 /* ShadingCore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShadingCore.swift; sourceTree = "<group>"; };
+		D3D7097E1EB64E75009C76B4 /* SphericalHarmonicsFragmentShaderPNT.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SphericalHarmonicsFragmentShaderPNT.swift; sourceTree = "<group>"; };
+		D3D7097F1EB64E75009C76B4 /* Texture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Texture.swift; sourceTree = "<group>"; };
+		D3D709801EB64E75009C76B4 /* Uniform.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Uniform.swift; sourceTree = "<group>"; };
+		D3D709811EB64E75009C76B4 /* Variables.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Variables.swift; sourceTree = "<group>"; };
+		D3D709821EB64E75009C76B4 /* VariablesPNT.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VariablesPNT.swift; sourceTree = "<group>"; };
+		D3D709831EB64E75009C76B4 /* VariablesPT.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VariablesPT.swift; sourceTree = "<group>"; };
+		D3D709841EB64E75009C76B4 /* VertexShading.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VertexShading.swift; sourceTree = "<group>"; };
+		D3D709981EB64E80009C76B4 /* DisplayLinkTestRunner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisplayLinkTestRunner.swift; sourceTree = "<group>"; };
+		D3D709991EB64E80009C76B4 /* TestPNT.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestPNT.swift; sourceTree = "<group>"; };
+		D3D7099A1EB64E80009C76B4 /* TestPT.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestPT.swift; sourceTree = "<group>"; };
+		D3D7099B1EB64E80009C76B4 /* TestShaderProgram.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestShaderProgram.swift; sourceTree = "<group>"; };
+		D3D7099C1EB64E80009C76B4 /* TestShadingCore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestShadingCore.swift; sourceTree = "<group>"; };
+		D3D7099D1EB64E80009C76B4 /* TestTexture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestTexture.swift; sourceTree = "<group>"; };
+		D3D7099E1EB64E80009C76B4 /* TestVariables.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestVariables.swift; sourceTree = "<group>"; };
+		D3D709AA1EB64ED9009C76B4 /* SGLTestsHostApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SGLTestsHostApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3D709AC1EB64ED9009C76B4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D3D709AE1EB64ED9009C76B4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D3D709B11EB64ED9009C76B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D3D709B31EB64ED9009C76B4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D3D709B81EB64ED9009C76B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D3D709BF1EB64EEF009C76B4 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		D3D709C01EB64EEF009C76B4 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +123,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3D709C11EB64EEF009C76B4 /* GLKit.framework in Frameworks */,
+				D3D709C21EB64EEF009C76B4 /* OpenGLES.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -47,6 +136,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D3D709A71EB64ED9009C76B4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -55,7 +151,9 @@
 			children = (
 				D3D7095A1EB64DE4009C76B4 /* SGL */,
 				D3D709651EB64DE5009C76B4 /* SGLTests */,
+				D3D709AB1EB64ED9009C76B4 /* SGLTestsHostApp */,
 				D3D709591EB64DE4009C76B4 /* Products */,
+				D3D709BE1EB64EEF009C76B4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +162,7 @@
 			children = (
 				D3D709581EB64DE4009C76B4 /* SGL.framework */,
 				D3D709611EB64DE5009C76B4 /* SGLTests.xctest */,
+				D3D709AA1EB64ED9009C76B4 /* SGLTestsHostApp.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -71,6 +170,25 @@
 		D3D7095A1EB64DE4009C76B4 /* SGL */ = {
 			isa = PBXGroup;
 			children = (
+				D3D709721EB64E75009C76B4 /* Attribute.swift */,
+				D3D709731EB64E75009C76B4 /* BasicFragmentShaderPT.swift */,
+				D3D709741EB64E75009C76B4 /* BasicVertexShaderPNT.swift */,
+				D3D709751EB64E75009C76B4 /* BasicVertexShaderPT.swift */,
+				D3D709761EB64E75009C76B4 /* Drawable.swift */,
+				D3D709771EB64E75009C76B4 /* DrawableCore.swift */,
+				D3D709781EB64E75009C76B4 /* FlatSquarePT.swift */,
+				D3D709791EB64E75009C76B4 /* FlattishSquarePNT.swift */,
+				D3D7097A1EB64E75009C76B4 /* FragmentShading.swift */,
+				D3D7097B1EB64E75009C76B4 /* PhongOneDirectionalFragmentShaderPNT.swift */,
+				D3D7097C1EB64E75009C76B4 /* ShaderProgram.swift */,
+				D3D7097D1EB64E75009C76B4 /* ShadingCore.swift */,
+				D3D7097E1EB64E75009C76B4 /* SphericalHarmonicsFragmentShaderPNT.swift */,
+				D3D7097F1EB64E75009C76B4 /* Texture.swift */,
+				D3D709801EB64E75009C76B4 /* Uniform.swift */,
+				D3D709811EB64E75009C76B4 /* Variables.swift */,
+				D3D709821EB64E75009C76B4 /* VariablesPNT.swift */,
+				D3D709831EB64E75009C76B4 /* VariablesPT.swift */,
+				D3D709841EB64E75009C76B4 /* VertexShading.swift */,
 				D3D7095B1EB64DE4009C76B4 /* SGL.h */,
 				D3D7095C1EB64DE4009C76B4 /* Info.plist */,
 			);
@@ -80,10 +198,38 @@
 		D3D709651EB64DE5009C76B4 /* SGLTests */ = {
 			isa = PBXGroup;
 			children = (
-				D3D709661EB64DE5009C76B4 /* SGLTests.swift */,
+				D3D709981EB64E80009C76B4 /* DisplayLinkTestRunner.swift */,
+				D3D709991EB64E80009C76B4 /* TestPNT.swift */,
+				D3D7099A1EB64E80009C76B4 /* TestPT.swift */,
+				D3D7099B1EB64E80009C76B4 /* TestShaderProgram.swift */,
+				D3D7099C1EB64E80009C76B4 /* TestShadingCore.swift */,
+				D3D7099D1EB64E80009C76B4 /* TestTexture.swift */,
+				D3D7099E1EB64E80009C76B4 /* TestVariables.swift */,
 				D3D709681EB64DE5009C76B4 /* Info.plist */,
 			);
 			path = SGLTests;
+			sourceTree = "<group>";
+		};
+		D3D709AB1EB64ED9009C76B4 /* SGLTestsHostApp */ = {
+			isa = PBXGroup;
+			children = (
+				D3D709AC1EB64ED9009C76B4 /* AppDelegate.swift */,
+				D3D709AE1EB64ED9009C76B4 /* ViewController.swift */,
+				D3D709B01EB64ED9009C76B4 /* Main.storyboard */,
+				D324605D1EB64F7200D0FA7A /* green.png */,
+				D3D709B31EB64ED9009C76B4 /* Assets.xcassets */,
+				D3D709B81EB64ED9009C76B4 /* Info.plist */,
+			);
+			path = SGLTestsHostApp;
+			sourceTree = "<group>";
+		};
+		D3D709BE1EB64EEF009C76B4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D3D709BF1EB64EEF009C76B4 /* GLKit.framework */,
+				D3D709C01EB64EEF009C76B4 /* OpenGLES.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -130,11 +276,30 @@
 			);
 			dependencies = (
 				D3D709641EB64DE5009C76B4 /* PBXTargetDependency */,
+				D3D709BD1EB64EDF009C76B4 /* PBXTargetDependency */,
 			);
 			name = SGLTests;
 			productName = SGLTests;
 			productReference = D3D709611EB64DE5009C76B4 /* SGLTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D3D709A91EB64ED9009C76B4 /* SGLTestsHostApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D3D709B91EB64ED9009C76B4 /* Build configuration list for PBXNativeTarget "SGLTestsHostApp" */;
+			buildPhases = (
+				D3D709A61EB64ED9009C76B4 /* Sources */,
+				D3D709A71EB64ED9009C76B4 /* Frameworks */,
+				D3D709A81EB64ED9009C76B4 /* Resources */,
+				D324605B1EB64F3400D0FA7A /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SGLTestsHostApp;
+			productName = SGLTestsHostApp;
+			productReference = D3D709AA1EB64ED9009C76B4 /* SGLTestsHostApp.app */;
+			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
@@ -149,9 +314,16 @@
 					D3D709571EB64DE4009C76B4 = {
 						CreatedOnToolsVersion = 8.3;
 						DevelopmentTeam = EBH83Y995B;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 					D3D709601EB64DE5009C76B4 = {
+						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = EBH83Y995B;
+						ProvisioningStyle = Automatic;
+						TestTargetID = D3D709A91EB64ED9009C76B4;
+					};
+					D3D709A91EB64ED9009C76B4 = {
 						CreatedOnToolsVersion = 8.3;
 						DevelopmentTeam = EBH83Y995B;
 						ProvisioningStyle = Automatic;
@@ -164,6 +336,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = D3D7094E1EB64DE4009C76B4;
 			productRefGroup = D3D709591EB64DE4009C76B4 /* Products */;
@@ -172,6 +345,7 @@
 			targets = (
 				D3D709571EB64DE4009C76B4 /* SGL */,
 				D3D709601EB64DE5009C76B4 /* SGLTests */,
+				D3D709A91EB64ED9009C76B4 /* SGLTestsHostApp */,
 			);
 		};
 /* End PBXProject section */
@@ -191,6 +365,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D3D709A81EB64ED9009C76B4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D324605E1EB64F7200D0FA7A /* green.png in Resources */,
+				D3D709B41EB64ED9009C76B4 /* Assets.xcassets in Resources */,
+				D3D709B21EB64ED9009C76B4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -198,6 +382,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3D709931EB64E75009C76B4 /* Uniform.swift in Sources */,
+				D3D709951EB64E75009C76B4 /* VariablesPNT.swift in Sources */,
+				D3D7098A1EB64E75009C76B4 /* DrawableCore.swift in Sources */,
+				D3D709961EB64E75009C76B4 /* VariablesPT.swift in Sources */,
+				D3D709851EB64E75009C76B4 /* Attribute.swift in Sources */,
+				D3D709941EB64E75009C76B4 /* Variables.swift in Sources */,
+				D3D709861EB64E75009C76B4 /* BasicFragmentShaderPT.swift in Sources */,
+				D3D7098F1EB64E75009C76B4 /* ShaderProgram.swift in Sources */,
+				D3D7098B1EB64E75009C76B4 /* FlatSquarePT.swift in Sources */,
+				D3D709921EB64E75009C76B4 /* Texture.swift in Sources */,
+				D3D7098C1EB64E75009C76B4 /* FlattishSquarePNT.swift in Sources */,
+				D3D709871EB64E75009C76B4 /* BasicVertexShaderPNT.swift in Sources */,
+				D3D709901EB64E75009C76B4 /* ShadingCore.swift in Sources */,
+				D3D709881EB64E75009C76B4 /* BasicVertexShaderPT.swift in Sources */,
+				D3D7098D1EB64E75009C76B4 /* FragmentShading.swift in Sources */,
+				D3D7098E1EB64E75009C76B4 /* PhongOneDirectionalFragmentShaderPNT.swift in Sources */,
+				D3D709891EB64E75009C76B4 /* Drawable.swift in Sources */,
+				D3D709971EB64E75009C76B4 /* VertexShading.swift in Sources */,
+				D3D709911EB64E75009C76B4 /* SphericalHarmonicsFragmentShaderPNT.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -205,7 +408,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D3D709671EB64DE5009C76B4 /* SGLTests.swift in Sources */,
+				D3D709A21EB64E80009C76B4 /* TestShaderProgram.swift in Sources */,
+				D3D709A41EB64E80009C76B4 /* TestTexture.swift in Sources */,
+				D3D7099F1EB64E80009C76B4 /* DisplayLinkTestRunner.swift in Sources */,
+				D3D709A01EB64E80009C76B4 /* TestPNT.swift in Sources */,
+				D3D709A11EB64E80009C76B4 /* TestPT.swift in Sources */,
+				D3D709A31EB64E80009C76B4 /* TestShadingCore.swift in Sources */,
+				D3D709A51EB64E80009C76B4 /* TestVariables.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D3D709A61EB64ED9009C76B4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3D709AF1EB64ED9009C76B4 /* ViewController.swift in Sources */,
+				D3D709AD1EB64ED9009C76B4 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -217,7 +435,23 @@
 			target = D3D709571EB64DE4009C76B4 /* SGL */;
 			targetProxy = D3D709631EB64DE5009C76B4 /* PBXContainerItemProxy */;
 		};
+		D3D709BD1EB64EDF009C76B4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D3D709A91EB64ED9009C76B4 /* SGLTestsHostApp */;
+			targetProxy = D3D709BC1EB64EDF009C76B4 /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D3D709B01EB64ED9009C76B4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D3D709B11EB64ED9009C76B4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		D3D7096A1EB64DE5009C76B4 /* Debug */ = {
@@ -324,6 +558,7 @@
 		D3D7096D1EB64DE5009C76B4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = EBH83Y995B;
@@ -337,6 +572,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.philiphubbard.SGL;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -344,6 +580,7 @@
 		D3D7096E1EB64DE5009C76B4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = EBH83Y995B;
@@ -364,22 +601,54 @@
 		D3D709701EB64DE5009C76B4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = EBH83Y995B;
 				INFOPLIST_FILE = SGLTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.philiphubbard.SGLTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SGLTestsHostApp.app/SGLTestsHostApp";
 			};
 			name = Debug;
 		};
 		D3D709711EB64DE5009C76B4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = EBH83Y995B;
 				INFOPLIST_FILE = SGLTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.philiphubbard.SGLTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SGLTestsHostApp.app/SGLTestsHostApp";
+			};
+			name = Release;
+		};
+		D3D709BA1EB64ED9009C76B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = EBH83Y995B;
+				INFOPLIST_FILE = SGLTestsHostApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.philiphubbard.SGLTestsHostApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		D3D709BB1EB64ED9009C76B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = EBH83Y995B;
+				INFOPLIST_FILE = SGLTestsHostApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.philiphubbard.SGLTestsHostApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -404,6 +673,7 @@
 				D3D7096E1EB64DE5009C76B4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D3D7096F1EB64DE5009C76B4 /* Build configuration list for PBXNativeTarget "SGLTests" */ = {
 			isa = XCConfigurationList;
@@ -412,6 +682,16 @@
 				D3D709711EB64DE5009C76B4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D3D709B91EB64ED9009C76B4 /* Build configuration list for PBXNativeTarget "SGLTestsHostApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3D709BA1EB64ED9009C76B4 /* Debug */,
+				D3D709BB1EB64ED9009C76B4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

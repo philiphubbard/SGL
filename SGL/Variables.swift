@@ -17,14 +17,13 @@
 //
 // http://opensource.org/licenses/MIT
 
-#import <UIKit/UIKit.h>
+//
 
-//! Project version number for SGL.
-FOUNDATION_EXPORT double SGLVersionNumber;
+// A protocol describing something that collects a particular group of Attribute and Uniform 
+// subclass instances, so they can be connected to another matching group, to complete the OpenGL
+// set-up process.
 
-//! Project version string for SGL.
-FOUNDATION_EXPORT const unsigned char SGLVersionString[];
-
-// In this header, you should import all the public headers of your framework using statements like #import <SGL/PublicHeader.h>
-
+public protocol Variables {
+    func connect(other: Variables, shaderProgram: GLuint) -> Bool
+}
 

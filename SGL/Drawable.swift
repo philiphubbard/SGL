@@ -17,14 +17,17 @@
 //
 // http://opensource.org/licenses/MIT
 
-#import <UIKit/UIKit.h>
+//
 
-//! Project version number for SGL.
-FOUNDATION_EXPORT double SGLVersionNumber;
+// A protocol describing something that can be drawn using a specific subclass of Variables (to 
+// define the attributes and uniforms expected by the shaders).  The generic functions use "where
+// clauses" to ensure that the corresponding shaders support matching subclasses of Variables.
 
-//! Project version string for SGL.
-FOUNDATION_EXPORT const unsigned char SGLVersionString[];
-
-// In this header, you should import all the public headers of your framework using statements like #import <SGL/PublicHeader.h>
-
-
+public protocol Drawable {
+    associatedtype Vars: Variables
+    var variables: Vars { get }
+    
+    func build<VS: VertexShading, FS: FragmentShading>(vertexShading: VS, fragmentShading: FS, shaderProgram: GLuint) -> Bool where VS.Vars == Vars
+    
+    func draw<VS: VertexShading, FS: FragmentShading>(vertexShading: VS, fragmentShading: FS) where VS.Vars == Vars
+}

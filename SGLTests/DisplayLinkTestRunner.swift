@@ -17,14 +17,31 @@
 //
 // http://opensource.org/licenses/MIT
 
-#import <UIKit/UIKit.h>
+import XCTest
+import GLKit
 
-//! Project version number for SGL.
-FOUNDATION_EXPORT double SGLVersionNumber;
+// Runs the specified closure (the body of a test) as part of the GLKViewController rendering loop.
+// Fullfils the specified XCTestExpecation if the closure returns true, thus successfully ending an 
+// asynchronous  test.  If the closure returns false, the XCTestExpecation will time out and the
+// test will fail.
 
-//! Project version string for SGL.
-FOUNDATION_EXPORT const unsigned char SGLVersionString[];
-
-// In this header, you should import all the public headers of your framework using statements like #import <SGL/PublicHeader.h>
-
-
+class DisplayLinkTestRunner: NSObject {
+    init(expectation: XCTestExpectation, closure: @escaping () -> Bool) {
+        self.expectation = expectation
+        self.closure = closure
+        super.init()
+        
+        let displaylink = CADisplayLink(target: self, selector: #selector(selector))
+        displaylink.add(to: .current, forMode: .defaultRunLoopMode)
+    }
+    
+    func selector(displaylink: CADisplayLink) {
+        if closure() {
+            expectation.fulfill()
+            displaylink.remove(from: .current, forMode: .defaultRunLoopMode)
+        }
+    }
+    
+    var expectation: XCTestExpectation
+    var closure: () -> Bool
+}

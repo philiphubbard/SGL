@@ -17,14 +17,36 @@
 //
 // http://opensource.org/licenses/MIT
 
-#import <UIKit/UIKit.h>
+import OpenGLES
 
-//! Project version number for SGL.
-FOUNDATION_EXPORT double SGLVersionNumber;
+// A simple vertex shader that produces positions ("P") and texture coordinates ("T"), given input
+// positions, texture coordinates and a model-view-projection matrix.
 
-//! Project version string for SGL.
-FOUNDATION_EXPORT const unsigned char SGLVersionString[];
-
-// In this header, you should import all the public headers of your framework using statements like #import <SGL/PublicHeader.h>
-
-
+public class BasicVertexShaderPT: VertexShading {
+    public var id: GLuint {
+        get {
+            return shadingCore.id
+        }
+    }
+    public let variables: VariablesPT
+    
+    public init?() {
+        guard let core = ShadingCore(shaderType: GLenum(GL_VERTEX_SHADER), shaderStr: vertexShaderStr) else {
+            return nil
+        }
+        shadingCore = core
+        variables = VariablesPT.initForShading(positionName: "in_position", textureName: "in_texCoord", modelViewProjMatName: "modelViewProjMatrix")
+    }
+    
+    private let shadingCore: ShadingCore
+    private let vertexShaderStr = "#version 300 es\n" +
+        "uniform mat4 modelViewProjMatrix;\n" +
+        "in vec4 in_position;\n" +
+        "in vec2 in_texCoord;\n" +
+        "out vec2 vs_texCoord;\n" +
+        "void main()\n" +
+        "{\n" +
+        "    gl_Position = modelViewProjMatrix * in_position;\n" +
+        "    vs_texCoord = in_texCoord;\n" +
+        "}\n"
+}

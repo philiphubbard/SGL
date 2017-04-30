@@ -17,14 +17,32 @@
 //
 // http://opensource.org/licenses/MIT
 
-#import <UIKit/UIKit.h>
+import OpenGLES
 
-//! Project version number for SGL.
-FOUNDATION_EXPORT double SGLVersionNumber;
+// A component that factors out the core OpenGL calls for compling a shader, and reporting any
+// errors that occurred.
 
-//! Project version string for SGL.
-FOUNDATION_EXPORT const unsigned char SGLVersionString[];
-
-// In this header, you should import all the public headers of your framework using statements like #import <SGL/PublicHeader.h>
-
-
+public class ShadingCore {
+    public private(set) var id: GLuint = 0
+    
+    public init?(shaderType: GLenum, shaderStr: String) {
+        id = glCreateShader(shaderType)
+        
+        let shaderStrNS = shaderStr as NSString
+        glShaderSource(id, 1, [shaderStrNS.utf8String], nil)
+        
+        glCompileShader(id)
+        var compileStatus: GLint = GL_NO_ERROR
+        glGetShaderiv(id, GLenum(GL_COMPILE_STATUS), &compileStatus);
+        guard compileStatus == GL_TRUE else {
+            let MaxErrorSize: GLsizei = 1024
+            var errorBuffer = [CChar](repeating: 0, count: Int(MaxErrorSize))
+            var errorSize: GLsizei = 1
+            glGetShaderInfoLog(id, MaxErrorSize, &errorSize, &errorBuffer);
+            let errorString = String(utf8String: errorBuffer)!
+            print("glCompileShader() failed: \(errorString)")
+            id = 0
+            return nil
+        }
+    }
+}
