@@ -199,12 +199,12 @@
 			isa = PBXGroup;
 			children = (
 				D3D709981EB64E80009C76B4 /* DisplayLinkTestRunner.swift */,
-				D3D709991EB64E80009C76B4 /* TestPNT.swift */,
-				D3D7099A1EB64E80009C76B4 /* TestPT.swift */,
-				D3D7099B1EB64E80009C76B4 /* TestShaderProgram.swift */,
 				D3D7099C1EB64E80009C76B4 /* TestShadingCore.swift */,
-				D3D7099D1EB64E80009C76B4 /* TestTexture.swift */,
+				D3D7099B1EB64E80009C76B4 /* TestShaderProgram.swift */,
 				D3D7099E1EB64E80009C76B4 /* TestVariables.swift */,
+				D3D7099A1EB64E80009C76B4 /* TestPT.swift */,
+				D3D7099D1EB64E80009C76B4 /* TestTexture.swift */,
+				D3D709991EB64E80009C76B4 /* TestPNT.swift */,
 				D3D709681EB64DE5009C76B4 /* Info.plist */,
 			);
 			path = SGLTests;
